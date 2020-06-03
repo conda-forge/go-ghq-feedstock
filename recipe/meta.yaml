@@ -1,5 +1,5 @@
 {% set name = "ghq" %}
-{% set version = "1.1.0" %}
+{% set version = "1.1.1" %}
 
 package:
   name: go-{{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://github.com/x-motemen/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: fbd40f1ba18ace399ea8625fb01da2d008a5c2b500b17979196577aaa827511b
+  sha256: 3a186003fc57e2bfb99c535db0a1d4cff79936dbc3c926a91f5d18d67d0bfc37
 
 build:
   number: 0
-  script: 
+  script:
     - go install -ldflags "-X main.revision={{ version }}" .
 
 requirements:
