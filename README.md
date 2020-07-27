@@ -5,7 +5,7 @@ Home: https://github.com/x-motemen/ghq
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: ghq provides a way to organize remote repository clones, like go get does.
 
