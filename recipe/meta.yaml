@@ -1,5 +1,5 @@
 {% set name = "ghq" %}
-{% set version = "1.4.2" %}
+{% set version = "1.5.0" %}
 
 package:
   name: go-{{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/x-motemen/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: 57a22e62c3941ec475a5d7417f014cca30e3fd15ee9e8882ef1024b72235c4c2
+  sha256: e06701d8e66a0d2123746f57c85a6058c7578b07a7cacbcbe22f36de093bb26b
 
 build:
   number: 0
