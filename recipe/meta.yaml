@@ -14,6 +14,7 @@ build:
 requirements:
   build:
     - {{ compiler('go-nocgo') }}
+    - go-licenses
 
 test:
   commands:
@@ -22,7 +23,9 @@ test:
 about:
   home: https://github.com/x-motemen/ghq
   license: MIT
-  license_file: LICENSE
+  license_file:
+    - LICENSE
+    - license-files/
   summary: ghq provides a way to organize remote repository clones, like go get does.
   dev_url: https://github.com/x-motemen/ghq
 
