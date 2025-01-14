@@ -1,22 +1,19 @@
-{% set name = "ghq" %}
 {% set version = "1.7.1" %}
 
 package:
-  name: go-{{ name|lower }}
+  name: go-ghq
   version: {{ version }}
 
 source:
-  url: https://github.com/x-motemen/{{ name }}/archive/v{{ version }}.tar.gz
+  url: https://github.com/x-motemen/ghq/archive/v{{ version }}.tar.gz
   sha256: f7c37f4b49f7109629370723ec5d30c4b306c5781d64e09270dc866899014c7e
 
 build:
   number: 0
-  script:
-    - go install -ldflags "-X main.revision={{ version }}" .
 
 requirements:
   build:
-    - {{ compiler('go') }}
+    - {{ compiler('go-nocgo') }}
 
 test:
   commands:
@@ -27,9 +24,9 @@ about:
   license: MIT
   license_file: LICENSE
   summary: ghq provides a way to organize remote repository clones, like go get does.
-
   dev_url: https://github.com/x-motemen/ghq
 
 extra:
   recipe-maintainers:
+    - danielnachun
     - sodre
