@@ -1,4 +1,4 @@
-{% set version = "1.7.1" %}
+{% set version = "1.8.0" %}
 
 package:
   name: go-ghq
@@ -6,7 +6,7 @@ package:
 
 source:
   url: https://github.com/x-motemen/ghq/archive/v{{ version }}.tar.gz
-  sha256: f7c37f4b49f7109629370723ec5d30c4b306c5781d64e09270dc866899014c7e
+  sha256: 76cce5e3b3a39ab37d59138b916cc97d21dd6e98791775bdadc6986624918343
 
 build:
   number: 0
