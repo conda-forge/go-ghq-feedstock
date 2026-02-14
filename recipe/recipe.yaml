@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.8.1"
+  version: "1.9.2"
 
 package:
   name: go-ghq
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://github.com/x-motemen/ghq/archive/v${{ version }}.tar.gz
-  sha256: ac70f06eb06f2065fe610c143592a3de6967e1007f9839fb81aae259284345cb
+  sha256: 2940afc29eb7a146153522f501d773e913bbaf2eafbe764492aedacefa61cccb
 
 build:
   number: 0
